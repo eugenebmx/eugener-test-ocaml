@@ -14,7 +14,7 @@ bug-reports: "https://github.com/pypi/warehouse/issues"
 
 url {
   src: "https://github.com/eugenebmx/eugener-test-ocaml"
-  md5: "d8b1d041a5278d65ca0e9c98327cea92"
+  checksum: "md5=d8b1d041a5278d65ca0e9c98327cea92"
 }
 
 
