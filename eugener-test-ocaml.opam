@@ -1,16 +1,23 @@
 opam-version: "2.0"
 name: "eugener-test-ocaml"
 version: "0.1.0"
-synopsis: "A simple Hello World project in OCaml"
+synopsis: "test project. don't download"
 description: """
-This is a simple Hello World project in OCaml to demonstrate how to create a project and upload it to OPAM.
+test project. don't downloadtest project. don't downloadtest project. don't downloadtest project. don't download
 """
 maintainer: "your-email@example.com"
 authors: "Your Name"
 license: "MIT"
-homepage: "https://github.com/yourusername/eugener-test-ocaml"
-dev-repo: "git+https://github.com/yourusername/eugener-test-ocaml.git"
-bug-reports: "https://github.com/yourusername/eugener-test-ocaml/issues"
+homepage: "hhttps://github.com/pypi/warehouse"
+dev-repo: "git+https://github.com/pypi/warehouse.git"
+bug-reports: "https://github.com/pypi/warehouse/issues"
+
+url {
+  src: "/Users/eugenerojavski/Library/CloudStorage/OneDrive-Checkmarx/Documents/ocaml/eugener-test-ocaml-0.1.0.tar.gz"
+
+}
+
+
 depends: [
   "dune" {>= "2.0"}
 ]
