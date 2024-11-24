@@ -1,0 +1,22 @@
+opam-version: "2.0"
+name: "eugener-test-ocaml"
+version: "0.1.0"
+synopsis: "A simple Hello World project in OCaml"
+description: """
+This is a simple Hello World project in OCaml to demonstrate how to create a project and upload it to OPAM.
+"""
+maintainer: "your-email@example.com"
+authors: "Your Name"
+license: "MIT"
+homepage: "https://github.com/yourusername/eugener-test-ocaml"
+dev-repo: "git+https://github.com/yourusername/eugener-test-ocaml.git"
+bug-reports: "https://github.com/yourusername/eugener-test-ocaml/issues"
+depends: [
+  "dune" {>= "2.0"}
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+install: [
+  ["dune" "install" "-p" name "--prefix=%{prefix}%"]
+]
