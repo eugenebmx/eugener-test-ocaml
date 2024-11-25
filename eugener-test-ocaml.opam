@@ -3,7 +3,7 @@ name: "eugener-test-ocaml"
 version: "0.1.0"
 synopsis: "test project. don't download"
 description: """
-test project. don't downloadtest project. don't downloadtest project. don't downloadtest project. don't download
+Test project. don't downloadtest project. don't downloadtest project. don't downloadtest project. don't download
 """
 maintainer: "your-email@example.com"
 authors: "Your Name"
@@ -12,10 +12,6 @@ homepage: "hhttps://github.com/pypi/warehouse"
 dev-repo: "git+https://github.com/pypi/warehouse.git"
 bug-reports: "https://github.com/pypi/warehouse/issues"
 
-url {
-  src: "https://github.com/eugenebmx/eugener-test-ocaml"
-  checksum: "md5=d8b1d041a5278d65ca0e9c98327cea92"
-}
 
 
 depends: [
