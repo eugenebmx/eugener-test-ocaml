@@ -1,9 +1,9 @@
 opam-version: "2.0"
-name: "eugener_test_ocaml"
+name: "eugener-test-ocaml"
 version: "0.1.0"
 synopsis: "Test project. don't download"
 description: """
-Test project. don't downloadtest project. don't downloadtest project. don't downloadtest project. don't download
+test project. don't downloadtest project. don't downloadtest project. don't downloadtest project. don't download
 """
 maintainer: "your-email@example.com"
 authors: "Your Name"
@@ -11,19 +11,23 @@ license: "MIT"
 homepage: "hhttps://github.com/pypi/warehouse"
 dev-repo: "git+https://github.com/pypi/warehouse.git"
 bug-reports: "https://github.com/pypi/warehouse/issues"
-
-url {
-  src: "https://github.com/eugenebmx/eugener-test-ocaml"
-  checksum: "md5=d8b1d041a5278d65ca0e9c98327cea92"
-}
-
-
 depends: [
+  "ocaml"
   "dune" {>= "3.16"}
+  "odoc" {with-doc}
 ]
 build: [
-  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
 ]
-install: [
-  ["dune" "install" "-p" name "--prefix=%{prefix}%"]
-]
+dev-repo: "git+https://github.com/username/reponame.git"
