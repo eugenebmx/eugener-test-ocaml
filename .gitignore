@@ -1,0 +1,48 @@
+# Ignore build artifacts
+_build/
+*.cmx
+*.cmi
+*.cmo
+*.cmx
+*.o
+*.a
+*.so
+*.exe
+*.obj
+*.dll
+*.dylib
+
+# Ignore editor and IDE files
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+.DS_Store
+*.log
+*.aux
+*.out
+*.toc
+*.bak
+*.backup
+*.tmp
+*.temp
+*.cache
+*.project
+*.directory
+.idea/
+.vscode/
+*.merlin
+
+# Ignore OPAM files
+_opam/
+*.install
+.opam-switch/
+.opam/
+
+# Ignore Dune files
+*.install
+*.dune
+*.dune-project
+.dune/
+_build/

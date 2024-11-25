@@ -1,0 +1,4 @@
+(executable
+ (public_name eugener_test_ocaml)
+ (name eugener_test_ocaml)
+ (libraries eugener_test_ocaml))
